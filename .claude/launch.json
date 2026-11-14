@@ -1,0 +1,78 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "kalam-web",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.js"],
+      "cwd": "/Users/tanmayganhotra/Desktop/monty app/Kalam",
+      "port": 4517
+    },
+    {
+      "name": "monty-web",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "expo",
+        "start",
+        "--web"
+      ],
+      "port": 8081
+    },
+    {
+      "name": "monty-ios-pair",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "expo",
+        "start"
+      ],
+      "port": 8081
+    },
+    {
+      "name": "84-din-plan",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/tanmayganhotra/Desktop/84-din-plan",
+        "run",
+        "dev"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "sadhana-web",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/tanmayganhotra/Desktop/sadhana",
+        "expo",
+        "start",
+        "--web",
+        "--port",
+        "8082"
+      ],
+      "cwd": "/Users/tanmayganhotra/Desktop/sadhana",
+      "port": 8082
+    },
+    {
+      "name": "gut-web",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "expo",
+        "start",
+        "--web",
+        "--port",
+        "8083"
+      ],
+      "cwd": "/Users/tanmayganhotra/Desktop/monty app/Gut",
+      "port": 8083
+    },
+    {
+      "name": "chess-coach",
+      "runtimeExecutable": "/Users/tanmayganhotra/chess-coach/.venv/bin/python",
+      "runtimeArgs": [
+        "/Users/tanmayganhotra/chess-coach/app.py"
+      ],
+      "port": 8765
+    }
+  ]
+}

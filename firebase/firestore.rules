@@ -1,0 +1,16 @@
+// Monty Firestore security rules.
+// Not deployed yet — paste this into Firebase Console -> Firestore
+// Database -> Rules once the project exists, or deploy via
+// `firebase deploy --only firestore:rules` with the Firebase CLI.
+//
+// Every write from the app goes through src/backend/firestoreSync.ts as
+// users/{uid}/{collectionName}/{docId} — a user can only ever read or
+// write documents nested under their own uid.
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}
